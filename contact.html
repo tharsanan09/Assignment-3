@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- budge button link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    
+       <style>
+         .blur{
+            background-image: url(.//Assiets/images/carousel-1.jpg); height: 230px; opacity: 0.8; background-repeat: no-repeat; background-size: cover;
+         }
+
+         /* list item home */
+        
+        .breadcrumb-item.active {
+            color: #ffc107;;
+        }
+         .breadcrumb a {
+            text-decoration: none;
+            color: white;}
+
+            .contact-header {
+            background: url(.//Assiets/images/output-onlinepngtools.png) no-repeat center center/cover; background-repeat: no-repeat; background-size: cover;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+            
+        
+        .contact-header h1,
+        .breadcrumb {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* map button */
+        .btn-custom {
+            background-color: #ff6f00; /* Orange color */
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Space between text and icon */
+        }
+        .btn-custom:hover {
+            background-color: #e65c00; /* Darker orange on hover */
+        }
+        /* footer button */
+        .foobu{
+                background-color: rgb(23, 58, 58); /* Dark background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+              }
+
+              .signup-form {
+            display: flex;
+            background-color: #222831;
+            padding: 5px;
+            border-radius: 5px;}
+            .form-control {
+            border: none;
+            background: transparent;
+            color: white}
+
+            .form-control::placeholder {
+              color: #ccc;}
+
+              .btn-custom {
+            background-color: #ff6f00;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;}
+            .btn-custom:hover {
+              background-color: #e65c00;}
+      
+    </style>
+</head>
+<body>
+
+
+    <section class="blur">
+        <nav class="navbar navbar-expand-sm  navbar-dark fixed-top" style="height: 100px;">
+            <div class="container-fluid">
+              <img src=".//Assiets/images/finallogo.png" height="130px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- home section -->
+              <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-shadow" href="#about" >About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#service">Services</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                  </li>  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                      
+                      
+                    </ul>
+                  </li>
+                </ul>
+                <button class="btn btn-success" style=" background-color: transparent; color: #FF6F0F; border-color: #FF6F0F;"> Sign Up <i class="fas fa-arrow-right "></i> </button>
+              </div>
+            </div>
+          </nav>
+         
+          <div class="contact-header">
+            <h1 class="fw-bold">Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+
+          
+        </section>
+
+        <!-- section 2 -->
+          
+        <div style="display:flex; padding-top: 20px; gap: 40px; padding-left: 300px; line-height: 27px;">
+            <div class="bg-light" style="padding-top: 15px;">
+                <button class="btn" style="background-color: rgb(245, 218, 223); color: orangered; border-radius: 20px;">Contact Us</button>
+                <h3 style="padding-bottom: 10px; padding-top: 10px;"><b>If You Have Any Query, Please<br>Contact Us</b></h3>
+                <form>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Your Name" size="28px">
+                <label for="mail"></label>
+                <input type="text" id="mail" placeholder="Your Nmail" size="27px"><br><br>
+                <label for="subject"></label>
+                <input type="text" id="subject" placeholder="Subject" size="58px"><br><br>
+                <label for="message"></label>
+                
+                <textarea id="textarea" placeholder="Message" style="width: 605px;"></textarea><br>
+                  <div style="padding-top: 20px;">
+                <button class="btn btn-custom">
+                  Send Message
+                  <span>&#10145;</span> <!-- Unicode for right arrow -->
+              </button>
+            </div>
+                 
+            </form>
+            </div>
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd" style="height: 400px; width: 600px;"></iframe>
+            </div>
+        </div>
+
+        <!-- section footer -->
+        <section style="background-color:rgb(23, 58, 58) ;">
+          <div style="display: flex; height: 220px; gap: 170px; padding-left: 220px; padding-top: 30px; color: #f8e9e4;">
+            <div>
+              <h3>HomeBites</h3>
+              <p>Lorem ipsum dolor sit, amet<br> consectetur adipisicing elit. Et<br> ratione quae reprehenderit culpa <br>repellat, tempore atque repudiandae<br>eum voluptates.</p>
+              <div style="display: flex; gap: 20px;">
+                
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+    
+              </div>
+            </div>
+            <div>
+              
+              <div>
+                <h5>Address</h5>
+                <p><i class="bi bi-geo-alt"></i> 123 Street, Jaffna, Sri Lanka</p>
+                <p><i class="bi bi-telephone"></i></i> +077 123 4567</p>
+                <p><i class="bi bi-envelope"></i> info@homebites.com</p>
+            </div>
+          </div>
+            <div style="line-height: 10px;">
+              <h5>Quick Links</h5>
+              <p><i class="bi bi-caret-right"></i> About Us</p>
+              <p><i class="bi bi-caret-right"></i> Contact Us</p>
+              <p><i class="bi bi-caret-right"></i> Our Servics</p>
+              <p><i class="bi bi-caret-right"></i>Terms & Conditions</p>
+              <p><i class="bi bi-caret-right"></i>Support</p>
+    
+            </div>
+            
+            <div>
+              <h5>Newsseltter</h5>
+              <p>Whare Every Elite Feeds Like Home </p>
+
+              <div class="foobu">
+              <div class="signup-form">
+                <input type="email" class="form-control" placeholder="Your email">
+                <button class="btn btn-custom">Sign Up</button>
+
+            </div>
+          </div>
+            </div>
+          </div>
+            </div>
+            <hr>
+            <div style="display: flex;"> 
+              
+           <div>
+            <p style="color: #f8e9e4; padding-left: 250px;"><i class="bi bi-c-circle"></i><b>Home Bits</b> AB Might Reserved.</p>
+            </div>
+            <div>
+            <p style="color: #f8e9e4; padding-left: 900px;">Reseved By <b>Uki Cohort 11</b></p>
+          </div>
+        </div>
+         
+        </section>
+        
+    
+</body>
+</html>
